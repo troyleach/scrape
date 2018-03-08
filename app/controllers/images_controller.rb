@@ -12,14 +12,12 @@ class ImagesController < ApplicationController
   end
 
   def show_images
-    @scraped_data = Scraper.new.get_data
+    @scraped_data = Scraper.new(params["url"]["url"]).get_data
   end
 
   # GET /images/1
   # GET /images/1.json
   def show
-    binding.pry
-    @images = Image.all
   end
 
   # GET /images/new

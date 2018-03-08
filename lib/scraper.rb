@@ -4,8 +4,8 @@ require 'open-uri'
 class Scraper
   attr_accessor :page
   
-  def initialize
-    @page = Nokogiri::HTML(open("https://www.amazon.com/", 'User-Agent' => 'Nooby'))
+  def initialize(url)
+    @page = Nokogiri::HTML(open(url, 'User-Agent' => 'Nooby'))
   end
 
   def get_data
