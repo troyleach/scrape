@@ -12,7 +12,7 @@ class ImagesController < ApplicationController
   end
 
   def show_images
-    @images = Image.all
+    @scraped_data = Scraper.new.get_data
   end
 
   # GET /images/1

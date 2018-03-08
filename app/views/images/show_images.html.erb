@@ -1,13 +1,13 @@
 <div class="container">
     <p id="notice"><%= notice %></p>
     <div class="row">
-        <% @images.each do |image| %>
+        <% @scraped_data.each do |image| %>
             <div class="col-sm-6 col-md-4">
-                <a href="<%= image.src %>">
+                <a href="<%= image[:src] %>">
                     <div class="thumbnail">
-                        <img src="<%= image.src %>" alt="image" class='thumb-nail'>
+                        <img src="<%= image[:src] %>" alt="image" class='thumb-nail'>
                         <div class="caption">
-                            <strong><%= image.alt || 'N/A' %></strong>
+                            <strong><%= image[:alt] || 'N/A' %></strong>
                         </div>
                     </div>
                 </a>
