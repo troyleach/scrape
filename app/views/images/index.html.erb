@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+<div class="jumbotron">
+    <center>
+        <%= form_tag scrape_path do %>
+            <span>https:// </span><%= text_field "url", "url", "size" => 55 %>
+        <br>
+        <p>
+            <%= submit_tag "Get URL", class: "btn btn-large btn-primary pull-right" %>
+        </p>
+    <% end %>
+</div>
+
