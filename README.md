@@ -18,7 +18,7 @@ schema might look something like:
     title: stirng
 ```
 
-- The next thing would be validations. I prove NO control over what the user enters. Basically the application would brake if someone enter a weird url. I feel validating user input is so very important. Especially if the demographics are unknown.
+- The next thing would be validations. I provide NO control over what the user enters. Basically the application would brake if someone enter a weird url. I feel validating user input is so very important. Especially if the demographics are unknown.
 - I think more error handling on the front end is needed as well. If the src is not HTTP and is stored on the sever a broken image is shown and is not very user friendly.
 
 Again, I appreciate the opportunity to show my skill. I do however feel this only scratches surface as to what is in my tool box. This was a exciting project. I enjoyed working on this.
