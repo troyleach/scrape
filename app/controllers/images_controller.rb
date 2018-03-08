@@ -12,7 +12,11 @@ class ImagesController < ApplicationController
   end
 
   def show_images
-    @scraped_data = Scraper.new(params["url"]["url"]).get_data
+    #TODO lots of validation needs to happen here
+    url = params["url"]["url"]
+    url = url.gsub(/(^\w+:|^)\/\//, '') # insure that the http/https is removed
+    url = "https://#{url}"
+    @scraped_data = Scraper.new(url).get_data
   end
 
   # GET /images/1

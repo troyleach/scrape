@@ -3,10 +3,17 @@
     <center>
         <%= form_tag show_images_path do %>
             <span>https:// </span><%= text_field "url", "url", "size" => 55 %>
-        <br>
-        <p>
-            <%= submit_tag "Get URL", class: "btn btn-large btn-primary pull-right" %>
-        </p>
-    <% end %>
+            <br>
+            <p>
+                <%= submit_tag "Get URL", class: "btn btn-large btn-primary pull-right" %>
+            </p>
+        <% end %>
+    </center>
+
+<h6>Example</h6>
+<p>
+    www.amazon.com <br>
+    www.reddit.com/r/funny/
+</p>
 </div>
 
